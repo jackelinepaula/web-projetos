@@ -18,8 +18,8 @@ body{
     justify-content: space-evenly;
     background-color: #323A49;
     width: 500px;
-    height: 300px;
-    margin: 8% auto;
+    height: 280px;
+    margin: 12% auto;
 
     border-radius: 10px;
 }
@@ -32,7 +32,7 @@ body{
     font-weight: 400;
     color: #52FFA8;
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .main .conselho{
