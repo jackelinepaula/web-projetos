@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/queries.css">
     <title>Shoes</title>
 </head>
 
 <body>
     <div class="container">
 
-        <!-- MENU -->
-        <div class="menu">
+        <!-- MENU DESKTOP-->
+        <div class="menu menu-desktop">
             <div class="logo">
                 <img src="img/logo.svg" alt="Shoes logo">
             </div>
@@ -34,14 +36,49 @@
             <div class="icon"><img src="img/icon-bag.svg" alt="ícone sacola de compras"></div>
         </div>
 
+        <!-- MENU RESPONSIVO-->
+        <div class="menu menu-responsivo">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Shoes logo">
+            </div>
+
+            <div class="search-box">
+                <div class="icon-search"><img src="img/icon-search.svg" alt="icon-search"></div>
+                <input type="text" placeholder="Pesquisar">
+            </div>
+
+            <button class="menu-hamb">
+                <img src="img/menublack.svg" alt="">
+            </button>
+
+            <div class="itens" id="itens-responsivo">
+                <ul>
+                    <li><a href="/">Homem</a></li>
+                    <li><a href="/">Mulher</a></li>
+                    <li><a href="/">Criança</a></li>
+                    <li><a href="/">Customizar</a></li>
+                </ul>
+            </div>
+            <div class="icon"><img src="img/icon-bag.svg" alt="ícone sacola de compras"></div>
+        </div>
+
         <!-- MAIN -->
         <div class="content">
-            <div class="left">
+            <div class="left left-desktop">
                 <h2>Tênis esportivo para corrida<span>.</span></h2>
                 <p>Esse tênis tem o intuito de te deixar ainda mais fitness, focado, e musculoso.</p>
                 <h4>R$ 1000,00</h4>
                 <button>Comprar</button>
             </div>
+
+            <!-- MAIN LEFT MOBILE-->
+            <div class="left left-mobile">
+                <h2>Tênis esportivo para corrida<span>.</span></h2>
+                <h4>R$ 1000,00</h4>
+                <p>Esse tênis tem o intuito de te deixar ainda mais fitness, focado, e musculoso.</p>
+                <button>Comprar</button>
+            </div>
+
             <div class="right">
                 <div id="my-keen-slider" class="keen-slider">
                     <div class="keen-slider__slide number-slide1"><img src="img/tenis-2.png" alt="tenis-img"></div>
@@ -49,17 +86,21 @@
                     <div class="keen-slider__slide number-slide3"><img src="img/tenis-3.png" alt="tenis=img"></div>
                 </div>
                 <div id="thumbnails" class="keen-slider thumbnail">
-                    <div class="1 keen-slider__slide number-slide1"><img class="img-but" src="img/tenis-2.png" alt="tenis-img"></div>
-                    <div class="1 keen-slider__slide number-slide2"><img class="img-but" src="img/tenis-1.png" alt="tenis-img"></div>
-                    <div class="1 keen-slider__slide number-slide3"><img class="img-but" src="img/tenis-3.png" alt="tenis-3"></div>
+                    <div class="1 keen-slider__slide number-slide1"><img class="img-but" src="img/tenis-2.png"
+                            alt="tenis-img"></div>
+                    <div class="1 keen-slider__slide number-slide2"><img class="img-but" src="img/tenis-1.png"
+                            alt="tenis-img"></div>
+                    <div class="1 keen-slider__slide number-slide3"><img class="img-but" src="img/tenis-3.png"
+                            alt="tenis-3"></div>
                 </div>
             </div>
         </div>
     </div>
+    
     <section class="section"></section>
 
     <!-- FOOTER -->
-    <section class="footer">
+    <section class="footer foot-desktop">
         <div class="img-video">
             <img src="img/img-video.png" alt="">
         </div>
@@ -75,7 +116,31 @@
             <p>Explore mais <span><img src="img/icon-arrow.svg" alt="flecha"></span></p>
         </div>
     </section>
+
+    <!-- FOOTER MOBILE-->
+    <section class="footer foot-mobile">
+        <div class="itens-footer">
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div class="right-foot">
+            <div class="butao-mais">
+                <p>Explore mais <span><img src="img/icon-arrow.svg" alt="flecha"></span></p>
+            </div>
+            <div class="img-video">
+                <img src="img/img-video.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
+
 <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.6.5/keen-slider.min.js"></script>
 <script>
     function ThumbnailPlugin(main) {
