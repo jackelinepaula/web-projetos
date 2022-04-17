@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body{
+    background-color: #111518;
+}
+
+.main{
+    margin: auto;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main header h3{
+    font-size: 32px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #F2F1F3;
+    margin-top: 18px;
+}
+
+.main .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    background-color: #303236;
+    min-height: 80vh;
+    border-radius: 5px;
+}
+
+.main .content .players{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.main .content .players .player_x, .main .content .players .player_o{
+    background-color: #F2F1F3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 220px;
+    height: 50px;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.player_x.active, .player_o.active{
+    border-bottom: 4px solid;
+    border-color: #9480FD;
+    transition: .2s;
+}
+
+.player_x img, .player_o img{
+    width: 30px;
+}
+
+.player_x p, .player_o p{
+    font-size: 20px;
+}
+
+.text-turno{
+    margin: auto;
+}
+
+.text-turno h3{
+    font-size: 25px;
+    color: #F2F1F3;
+    font-weight: 500;
+}
+
+.main .content .jogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 380px;
+    background-color: #F2F1F3;
+    border-radius: 3px;
+}
+
+.main .content .jogo .table{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 370px;
+    height: 370px;
+    background-color: #303236;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.main .content .jogo .table .tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+}
+
+.main .content .jogo .table .tr .td{
+    width: 122px;
+    height: 120px;
+    background-color: #F2F1F3;
+    cursor: pointer;
+    transition: 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .content .jogo .table .tr .td img{
+    width: 100px;
+}
+
+@media (max-width: 1100px){
+    .main .content .players{
+        width: 65vw;
+    }
+}
+
+@media (max-width: 699px){
+
+    .main .content{
+        min-height: 90vh;
+    }
+
+    .main .content .players{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        height: 120px;
+    }
+    
+}
+
+@media (max-width: 400px){
+    .main .content .jogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+        height: 360px;
+        background-color: #F2F1F3;
+        border-radius: 3px;
+    }
+    
+    .main .content .jogo .table{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 350px;
+        height: 350px;
+        background-color: #303236;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    .main .content .jogo .table .tr{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 120px;
+    }
+    
+    .main .content .jogo .table .tr .td{
+        width: 115px;
+        height: 115px;
+        background-color: #F2F1F3;
+        cursor: pointer;
+        transition: 0.1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .content .jogo .table .tr .td img{
+        width: 100px;
+    }
+}

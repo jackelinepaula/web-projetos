@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <header>
+            <h3>Jogo da Velha</h3>
+        </header>
+
+        <div class="content">
+
+            <!-- PLAYERS -->
+            <div class="players">
+                <div class="player_x active">
+                    <img src="img/xis_icon.svg" alt="xis_icon">
+                    <img src="img/traco.svg" alt="traço">
+                    <p id="point_x">0</p>
+                </div>
+                <div class="player_o">
+                    <img src="img/o_icon.svg" alt="bolinha_icon">
+                    <img src="img/traco.svg" alt="traço">
+                    <p id="point_o">0</p>
+                </div>
+            </div>
+
+            <div class="text-turno">
+                <h3>Sua vez <span>X</span></h3>
+            </div>
+
+            <!-- JOGO DA VELHA -->
+            <div class="jogo">
+
+                <section class="table">
+                    <div class="tr">
+                        <div class="td celula" id="0"></div>
+                        <div class="td celula" id="1"></div>
+                        <div class="td celula" id="2"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td celula" id="3"></div>
+                        <div class="td celula" id="4"></div>
+                        <div class="td celula" id="5"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td celula" id="6"></div>
+                        <div class="td celula" id="7"></div>
+                        <div class="td celula" id="8"></div>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>
