@@ -134,6 +134,10 @@ body{
 
 @media (max-width: 699px){
 
+    .main{
+        height: 60vh;
+    }
+
     .main .content{
         min-height: 60vh;
     }
@@ -152,11 +156,11 @@ body{
 @media (max-width: 400px){
     
     .main{
-        height: 70vh;
+        height: 100vh;
     }
     
     .main .content{
-        min-height: 55vh;
+        min-height: 60vh;
     }
     
     .main .content .jogo{
