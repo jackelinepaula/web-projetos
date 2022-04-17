@@ -35,7 +35,7 @@ function jogar(id) {
     const celula = document.getElementById(id)
     //PARA TURNO == TRUE --> FIGURA X
     turno = checarTurno ? JOGADOR_X : JOGADOR_O
-    if (!celula.classList.contains(turno)) {
+    if (!celula.classList.contains("X") && !celula.classList.contains("O")) {
         celula.innerHTML = `<img src="img/${turno}.svg">`
         //MARCANDO O DONO DA CÉLULA
         celula.classList.add(turno)
