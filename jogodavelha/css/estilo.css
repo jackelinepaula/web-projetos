@@ -150,8 +150,13 @@ body{
 }
 
 @media (max-width: 400px){
+    
+    .main{
+        height: 70vh;
+    }
+    
     .main .content{
-        min-height: 50vh;
+        min-height: 55vh;
     }
     
     .main .content .jogo{
