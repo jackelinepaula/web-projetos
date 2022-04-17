@@ -135,7 +135,7 @@ body{
 @media (max-width: 699px){
 
     .main .content{
-        min-height: 90vh;
+        min-height: 70vh;
     }
 
     .main .content .players{
