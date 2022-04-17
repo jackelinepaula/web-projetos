@@ -150,6 +150,10 @@ body{
 }
 
 @media (max-width: 400px){
+    .main .content{
+        min-height: 50vh;
+    }
+    
     .main .content .jogo{
         display: flex;
         justify-content: center;
