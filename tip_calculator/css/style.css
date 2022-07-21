@@ -1,0 +1,264 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic);
+
+*{
+    font-family: 'Space Mono';
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+
+.title-app{
+    display: flex;
+    color: hsl(186, 14%, 43%);
+    font-size: 25px;
+    letter-spacing: 15px;
+    margin: auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+    background-color: #fff;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 10px 50px 5px hsla(186, 14%, 43%, 0.106);
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.left .bill{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bill .p{
+    color: hsl(186, 14%, 43%);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box-text{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.box-text .alert{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(221, 61, 71);
+    display: none;
+}
+
+.box-text .alert-2{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(221, 61, 71);
+    display: none;
+}
+
+.box-input{
+    display: flex;
+    height: 35px;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.box-input img{
+    position: absolute;
+    margin-left: 10px;
+    width: 1%;
+}
+
+.bill-input{
+    width: 90%;
+    height: 35px;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    text-align: right;
+}
+
+.left .bill-input:focus{
+    border: 1px solid hsl(172, 67%, 45%)
+}
+
+.left .bill-input::placeholder{
+    color: hsl(186, 14%, 43%);
+}
+
+
+/* buttons */
+.left .buttons{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.left .buttons .p{
+    color: hsl(186, 14%, 43%);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.left .buttons .btns{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 28% 28% 28%;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.buttons .btns button{
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    transition: .1s;
+}
+
+.buttons .btns button:hover{
+    background-color: hsl(183, 97%, 12%);
+    transition: .1s;
+}
+
+.buttons .btns input{
+    outline: none;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 20px;
+    color: hsl(183, 100%, 15%);
+}
+
+/* input two */
+
+.left .people{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.people .p{
+    color: hsl(186, 14%, 43%);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.left .people-input{
+    width: 90%;
+    height: 35px;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    text-align: right;
+}
+
+.left .people-input:focus{
+    border: 1px solid hsl(172, 67%, 45%)
+}
+
+.left .people-input::placeholder{
+    color: hsl(186, 14%, 43%);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/* RIGHT */
+
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+
+    width: 90%;
+    height: 450px;
+    background-color: hsl(183, 97%, 12%);
+    border-radius: 10px;
+}
+
+.resume .box-results{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.resume .tip-amount-box, .resume .total-box{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+
+.tip-amount-box h3, .total-box h3{
+    color: #fff;
+    font-size: 18px;
+}
+
+.tip-amount-box h3 span, .total-box h3 span{
+    color: hsl(184, 14%, 56%);
+}
+
+.tip-amount-box h1, .total-box h1{
+    font-size: 40px;
+    color: hsl(172, 67%, 45%);
+}
+
+.resume button{
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 97%, 12%);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+
+

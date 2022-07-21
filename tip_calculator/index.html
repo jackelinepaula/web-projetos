@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="title-app">
+        <h3>SPLI
+            <br>
+            TTER
+        </h3>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="bill">
+                <div class="box-text">
+                    <p class="p">Bill</p>
+                    <p id="alert" class="alert">Can't be zero!</p>
+                </div>
+                <div class="box-input">
+                    <img src="img/icon-dollar.svg" alt="icon dollar">
+                    <input type="number" id="bill-input" class="bill-input" placeholder="0">
+                </div>
+            </div>
+            <div class="buttons">
+                <p class="p">Select Tip %</p>
+                <div id="container-btn" class="btns">
+                    <button id="5">5%</button>
+                    <button id="10">10%</button>
+                    <button id="15">15%</button>
+                    <button id="25">25%</button>
+                    <button id="50">50%</button>
+                    <input type="text" id="0" placeholder="Custom">
+                </div>
+            </div>
+            <div class="people">
+                <div class="box-text">
+                    <p class="p">Number of People</p>
+                    <p id="alert-2" class="alert-2">Can't be zero!</p>
+                </div>
+                <div class="box-input">
+                    <img src="img/icon-person.svg" alt="icon person">
+                    <input type="number" id="people-input" class="people-input" placeholder="0">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right">
+            <div class="resume">
+                <div class="box-results">
+                    <div class="tip-amount-box">
+                        <h3 class="amount-text">Tip Amount<br>
+                            <span>/ person</span>
+                        </h3>
+                        <h1 id="amount">$0.00</h1>
+                    </div>
+                    <div class="total-box">
+                        <h3 class="total-text">Total<br>
+                            <span>/ person</span>
+                        </h3>
+                        <h1 id="total">$0.00</h1>
+                    </div>
+                </div>
+                <button id="reset" class="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
